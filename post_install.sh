@@ -31,4 +31,4 @@ sysrc -f /etc/rc.conf deluged_restart="YES"
 echo "The initial password for the WebUI is: deluge" > /root/PLUGIN_INFO
 echo "To change, login and you will be prompted." >> /root/PLUGIN_INFO
 echo "The default download directory is: /Downloads" >> /root/PLUGIN_INFO
-echo "Enable tunnel before using jail by running: iocage set allow_tun=1 deluge"
+echo "Enable tunnel before using jail by running: iocage set allow_tun=1 deluge" >> /root/PLUGIN_INFO
