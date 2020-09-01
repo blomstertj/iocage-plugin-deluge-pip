@@ -9,3 +9,10 @@
 name="deluged_restart"
 start_cmd="${name}_start"
 stop_cmd=":"
+restart_deluged
+{
+  service deluged restart
+}
+
+load_rc_config $name
+run_rc_command "$1"
