@@ -4,6 +4,9 @@
 #
 # From:
 # https://github.com/danjacques/freenasdocs
+#
+# Edit line 33 and 45 for your LAN and VPN requirements!
+#
 ##
 
 . /etc/network.subr
