@@ -6,7 +6,7 @@ This plugin will install Deluge and its WebUI from the Python Package Index (PyP
 ## To install this Plugin
 Download the plugin manifest file to your local file system.
 ```
-#fetch https://raw.githubusercontent.com/
+fetch https://raw.githubusercontent.com/blomstertj/iocage-myplugins/master/deluge-pip-openvpn.json
 ```
 Install the plugin.  Adjust the network settings as needed.
 ```
