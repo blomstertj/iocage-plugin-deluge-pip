@@ -4,8 +4,6 @@
 pw useradd -n deluge -u 8675309 -m -c "Deluge BitTorrent Client" -s /usr/sbin/nologin -w no
 mkdir -p /home/deluge/.config/deluge     
 chown -R deluge:deluge /home/deluge/
-mkdir -p /usr/local/etc/openvpn
-fetch -o /usr/local/etc/openvpn/ipfw.rules [LINK]
 
 mkdir /Downloads
 chown deluge:deluge /Downloads
