@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Prepare the system
+mkdir -p /usr/local/etc/openvpn
 pw useradd -n deluge -u 8675309 -m -c "Deluge BitTorrent Client" -s /usr/sbin/nologin -w no
 mkdir -p /home/deluge/.config/deluge     
 chown -R deluge:deluge /home/deluge/
