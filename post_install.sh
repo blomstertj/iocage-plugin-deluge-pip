@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # Prepare the system
-mkdir -p /usr/local/etc/openvpn
 pw useradd -n deluge -u 8675309 -m -c "Deluge BitTorrent Client" -s /usr/sbin/nologin -w no
 mkdir -p /home/deluge/.config/deluge     
 chown -R deluge:deluge /home/deluge/
@@ -32,4 +31,3 @@ sysrc -f /etc/rc.conf deluged_restart="YES"
 echo "The initial password for the WebUI is: deluge" > /root/PLUGIN_INFO
 echo "To change, login and you will be prompted." >> /root/PLUGIN_INFO
 echo "The default download directory is: /Downloads" >> /root/PLUGIN_INFO
-echo "Enable tunnel before using jail by running: iocage set allow_tun=1 deluge" >> /root/PLUGIN_INFO
