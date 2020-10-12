@@ -26,7 +26,7 @@ sysrc -f /etc/rc.conf openvpn_enable="YES"
 sysrc -f /etc/rc.conf openvpn_if="tun"
 sysrc -f /etc/rc.conf firewall_enable="YES"
 sysrc -f /etc/rc.conf firewall_script="/usr/local/etc/openvpn/ipfw.rules"
-sysrc -f /etc/rc.conf deluged_restart="YES"
+sysrc -f /etc/rc.conf pingwait_enable="YES"
 
 echo "The initial password for the WebUI is: deluge" > /root/PLUGIN_INFO
 echo "To change, login and you will be prompted." >> /root/PLUGIN_INFO
