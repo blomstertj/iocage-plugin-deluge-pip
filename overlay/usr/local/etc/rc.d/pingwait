@@ -3,6 +3,10 @@
 # PROVIDE: pingwait
 # REQUIRE: openvpn ipfw
 #
+# MANDATORY:
+#
+# pingwait_enable (bool):	  Set to NO by default.
+#				                    Set it to YES to enable pingwait.
 
 . /etc/rc.subr
 
@@ -15,6 +19,8 @@ pingwait_start()
 {
   until ping -c1 www.google.com >/dev/null 2>&1; do :; done
 }
+
+: ${pingwait_enable:="NO"}
 
 load_rc_config $name
 run_rc_command "$1"
