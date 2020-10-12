@@ -9,9 +9,11 @@
 name="deluged_restart"
 start_cmd="${name}_start"
 stop_cmd=":"
-restart_deluged
+
+deluged_restart_start()
 {
-  service deluged restart
+	until ping -c1 www.google.com >/dev/null 2>&1; do :; done
+  service restart deluged
 }
 
 load_rc_config $name
