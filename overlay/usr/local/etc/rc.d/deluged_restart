@@ -12,7 +12,7 @@ stop_cmd=":"
 
 deluged_restart_start()
 {
-	until ping -c1 www.google.com >/dev/null 2>&1; do :; done
+  until ping -c1 www.google.com >/dev/null 2>&1; do :; done
   service restart deluged
 }
 
