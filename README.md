@@ -16,6 +16,3 @@ Install the plugin.  Adjust the network settings as needed.
 ```
 iocage fetch -P deluge-pip-openvpn.json -n deluge
 ```
-
-
-
