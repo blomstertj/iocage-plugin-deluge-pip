@@ -17,7 +17,7 @@ stop_cmd=":"
 
 pingwait_start()
 {
-  until ping -c1 www.google.com >/dev/null 2>&1; do :; done
+  while true; do ping -c1 www.google.com > /dev/null && break; done
 }
 
 : ${pingwait_enable:="NO"}
