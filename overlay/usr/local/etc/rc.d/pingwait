@@ -1,19 +1,18 @@
 #!/bin/sh
 #
-# PROVIDE: deluged_restart
-# REQUIRE: deluged openvpn ipfw
+# PROVIDE: pingwait
+# REQUIRE: openvpn ipfw
 #
 
 . /etc/rc.subr
 
-name="deluged_restart"
+name="pingwait"
 start_cmd="${name}_start"
 stop_cmd=":"
 
-deluged_restart_start()
+pingwait_start()
 {
   until ping -c1 www.google.com >/dev/null 2>&1; do :; done
-  service restart deluged
 }
 
 load_rc_config $name
